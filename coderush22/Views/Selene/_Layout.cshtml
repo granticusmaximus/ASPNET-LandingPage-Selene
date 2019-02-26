@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>@ViewData["Title"] - Asp.Net Core 2.2</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="~/template/selene/img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link href="~/template/selene/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="~/template/selene/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="selene-preloader"></div>
+    </div>
+
+    @await Html.PartialAsync("_header")
+    @RenderBody()
+    <!-- ***** Footer Area Start ***** -->
+    @await  Html.PartialAsync("_footer")
+    <!-- ***** Footer Area End ***** -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="~/template/selene/js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="~/template/selene/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="~/template/selene/js/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="~/template/selene/js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="~/template/selene/js/active.js"></script>
+</body>
+
+</html>
